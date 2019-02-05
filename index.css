@@ -1,0 +1,37 @@
+body {
+  margin: 0px;
+}
+
+/********TOP-BAR********/
+
+.top-bar {
+  background: white;
+  height: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.search-session {
+  display: flex;
+}
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input {
+  background-color: #e1f7fd;
+  border-radius: 7px;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  margin: 10px;
+}
