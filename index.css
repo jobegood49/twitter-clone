@@ -24,8 +24,10 @@ body {
 }
 
 input {
-  background-color: #e1f7fd;
+  background-color: #f5f8fa;
   border-radius: 7px;
+  padding: 5px;
+  margin-bottom: 2px;
 }
 ul {
   list-style-type: none;
@@ -34,4 +36,38 @@ ul {
 
 li {
   margin: 10px;
+}
+
+/********Profile********/
+
+.profile {
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #00b8e6;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/********FOLLOW-BAR********/
+
+.container-follow {
+  margin: 0px 150px;
+}
+
+.follow-bar {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  margin-top: 25px;
+  border-color: #1b95e0;
+  color: #1b95e0;
+  font-size: 1.2rem;
+  border-radius: 7px;
+  padding: 0px 20px;
 }
