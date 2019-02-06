@@ -26,6 +26,21 @@ let twitter = {
       tweetList.appendChild(div)
     })
   },
+  sendTweet: event => {
+    event.preventDefault()
+    const tweet = document.getElementById('tweet').value
+    if (!tweet) {
+      alert('Forgot to tweet?')
+    } else {
+      currentId += 1
+      tweets.push({
+        id: currentId,
+        message: tweet,
+      })
+      tweetList.innerHTML = ''
+      twitter.displayTweets(tweets)
+    }
+  },
 }
 
 twitter.displayTweets(tweets)
