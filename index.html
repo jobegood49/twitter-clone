@@ -7,31 +7,30 @@
     <title>Twitter-Clone-Todo</title>
     <link rel="stylesheet" href="index.css" />
   </head>
+
   <body>
     <div class="top-bar">
       <div class="container">
-        <ul class="nav-home-about">
+        <ul class="nav-links">
           <li class="home">Home</li>
           <li class="about">About</li>
         </ul>
-        <div class="search-session">
-          <div class="search">
-            <input type="text" placeholder="Search Tweets" />
-          </div>
-          <ul class="session">
-            <li><small>Have an account?</small></li>
-            <li>login</li>
-          </ul>
+        <div class="search">
+          <input class="search-input" type="text" placeholder="Search tweets" />
         </div>
+        <ul class="account">
+          <li><small>Have an account?</small></li>
+          <li>Log in</li>
+        </ul>
       </div>
     </div>
 
     <div class="profile">
-      <img src="assets/cover-image.jpg" alt="" />
+      <img src="assets/cover-image.jpg" alt="Cover Image" />
     </div>
 
-    <div class="container-follow">
-      <div class="follow-bar">
+    <div class="container-menu">
+      <div class="menu-bar">
         <div>
           <ul>
             <li>Tweets</li>
@@ -50,14 +49,19 @@
 
     <div class="tweet-form">
       <form onsubmit="twitter.sendTweet(event)">
-        <input type="text" id="tweet" placeholder="Tweet Away" />
-        <input type="submit" value="Tweet" id="button-tweet" />
+        <div>
+          <textarea id="tweet" cols="30" placeholder="Tweet away"></textarea>
+        </div>
+        <div>
+          <input type="submit" value="Tweet" id="button-tweet" />
+        </div>
       </form>
     </div>
 
     <div class="container-bottom" id="container-bottom">
       <div id="container-tweets"></div>
     </div>
+
     <script src="index.js"></script>
   </body>
 </html>
