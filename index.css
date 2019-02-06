@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /********TOP-BAR********/
@@ -70,4 +71,17 @@ button {
   font-size: 1.2rem;
   border-radius: 7px;
   padding: 0px 20px;
+}
+
+/********Tweets********/
+
+.container-tweets {
+  background-color: #e7ecef;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tweet {
+  width: 500px;
+  background-color: white;
 }
