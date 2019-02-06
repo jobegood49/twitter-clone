@@ -16,7 +16,7 @@
         </ul>
         <div class="search-session">
           <div class="search">
-            <input type="text" placeholder="Seach Tweets" />
+            <input type="text" placeholder="Search Tweets" />
           </div>
           <ul class="session">
             <li><small>Have an account?</small></li>
@@ -48,11 +48,16 @@
       </div>
     </div>
 
-    <div class="container-tweets">
-      <div class="tweet">
-        <div>picture</div>
-        <div><p>text here</p></div>
-      </div>
+    <div class="tweet-form">
+      <form>
+        <input type="text" id="tweet" placeholder="Tweet Away" />
+        <input type="submit" value="Tweet" id="button-tweet" />
+      </form>
     </div>
+
+    <div class="container-bottom" id="container-bottom">
+      <div id="container-tweets"></div>
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>
