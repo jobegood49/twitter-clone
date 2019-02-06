@@ -96,3 +96,9 @@ button {
   margin: 5px;
   border-radius: 4px;
 }
+
+.img-tweet {
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+}

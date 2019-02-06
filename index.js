@@ -18,10 +18,10 @@ let twitter = {
       div.setAttribute('class', 'tweet')
       div.innerHTML = `
       <div>
-        picture
+        <image class="img-tweet" src='./assets/iconfinder_twitter_circle_color_107170.png'></image>
       </div>
       <div>
-        <p>${tweet.message} toto</p>
+        <p>${tweet.message}</p>
       </div>`
       tweetList.appendChild(div)
     })
